@@ -1,0 +1,32 @@
+<!-- <!-- js -->
+    
+    <!-- else{
+    let district=dist.value;
+let date=dt.value;
+fetch(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=${pincode}&date=${date}`).then(res => res.json()).
+then(data =>this.displayValues(data));
+} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>district</h1>
+    <div class="mb-2 p-2">
+        <input type="text" placeholder="Enter state.." id="state1">
+    </div>
+    <div class="mb-2 p-2">
+        <input type="text" placeholder="Enter district.." id="dist1">
+    </div>
+        <div class="mb-2 p-2">
+        <input type="text"placeholder="Enter date dd-mm-yyyy" id="dt1">
+    </div>
+        <button onclick="cowin.fetchState()">submit</button>
+        <div id="result"></div>
+</body>
+<script src="./script.js"></script>
+</html>

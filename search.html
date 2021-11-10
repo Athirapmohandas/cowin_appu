@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    input{
+        color:black;
+    }
+    #result,h3{
+        color: white;
+    }
+</style>
+<body>
+    <h3 class="mb-2 p-2">Search by pin</h3>
+    <div class="mb-2 p-2">
+    <input type="text" placeholder="Enter pincode" id="pin">
+</div>
+    <div class="mb-2 p-2">
+    <input type="text"placeholder="Date dd-mm-yyyy" id="dt">
+</div>
+    <button class="btn btn-primary"onclick="cowin.fetchValues()">submit</button>
+    <div id="result"></div>
+</div>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
